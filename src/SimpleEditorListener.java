@@ -113,6 +113,7 @@ public class SimpleEditorListener extends WindowAdapter implements ActionListene
 
     @Override
     public void close() throws Exception {
+        if (file != null) saveOperation();
         throw new UnsupportedOperationException("Not supported yet.");
     }
 }
