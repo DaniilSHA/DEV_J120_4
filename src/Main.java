@@ -8,5 +8,6 @@ public class Main {
         System.out.println(simpleEditor.getText());
         simpleEditor.appendText("New text", true);
         System.out.println(simpleEditor.getText());
+        simpleEditor.appendText("", true);
     }
 }

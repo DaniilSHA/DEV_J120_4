@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class SimpleEditor extends JFrame {
+
     private Container cp;
     private JLabel fileName;
     private JTextArea text;
@@ -27,7 +28,7 @@ public class SimpleEditor extends JFrame {
 
         createButtons();
         fileName = new JLabel();
-        fileName.setText("New file");
+        fileName.setText("MODE: new file -------------- FILE NAME: undefined");
         fileName.setHorizontalAlignment(SwingConstants.CENTER);
         text = new JTextArea();
 
@@ -100,6 +101,10 @@ public class SimpleEditor extends JFrame {
 
     String getText() {
         return text.getText();
+    }
+
+    public void setJLabelText (String str){
+        fileName.setText(str);
     }
 
 }
